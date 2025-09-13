@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glamour Hair Salon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero" style="background-image: url('images/salon-hero.jpg');">
+    <div class="overlay">
+      <h1>Glamour Hair Salon</h1>
+      <p>Luxury. Style. Confidence.</p>
+      <a href="#book" class="btn">Book Appointment</a>
+    </div>
+  </section>
+
+  <!-- Before & After -->
+  <section class="before-after">
+    <h2>Transform Your Look</h2>
+    <img src="images/before-after.jpg" alt="Before and After Hair">
+  </section>
+
+  <!-- Services -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card"><h3>Haircuts</h3><p>Trendy cuts tailored to you.</p></div>
+      <div class="card"><h3>Coloring</h3><p>Highlights, balayage, and full colors.</p></div>
+      <div class="card"><h3>Styling</h3><p>Perfect looks for every occasion.</p></div>
+      <div class="card"><h3>Treatments</h3><p>Deep care for healthy, shiny hair.</p></div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="products">
+    <h2>Salon Products</h2>
+    <img src="images/products.jpg" alt="Hair Products">
+  </section>
+
+  <!-- Opt-in Form -->
+  <div class="popup" id="offerPopup">
+    <div class="popup-content">
+      <h2>Get 10% Off Your First Visit!</h2>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Claim Offer</button>
+      </form>
+      <span class="close">&times;</span>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>📍 Nairobi | 📞 +254 700 123 456 | ✉️ hello@glamoursalon.com</p>
+    <p>© 2025 Glamour Hair Salon</p>
+  </footer>
+
+  <script>
+    // Popup trigger
+    window.onload = () => {
+      setTimeout(() => document.getElementById("offerPopup").style.display = "flex", 3000);
+    };
+    document.querySelector(".close").onclick = () => {
+      document.getElementById("offerPopup").style.display = "none";
+    };
+  </script>
+</body>
+</html>
